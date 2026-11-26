@@ -11,7 +11,10 @@ builds/rs3/**
 work/
 logs/
 saves/
-references/
+
+# Reference checkouts stay local. Only the link index is committed.
+references/**
+!references/SOURCES.md
 
 # Regenerated build output
 **/build/
