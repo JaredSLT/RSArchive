@@ -1,0 +1,19 @@
+[profile]
+input = "ref/gamepack.jar"
+
+[profile.deob]
+enable = true
+
+transformers = [
+    "AnnotateObfuscatedNames",
+    "UniqueRenamer",
+    "RedundantGoto",
+    "FernflowerException",
+]
+
+[profile.remap]
+enable = false
+
+[profile.source]
+decompile = false
+cleanup = false
