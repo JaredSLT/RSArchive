@@ -1,0 +1,63 @@
+#include "both/packets_impl.h"
+
+const int8_t rs_sizes_s2c_254[256] = {
+      6,   0,   0,   4,   0,   0,   0,   0,   7,   0,   0,   0,   0,   0,   4,   0,
+      0,   0,   0,   0,   0,   0,   0,   0,   3,   5,   0,   6,  -2,   0,   4,   0,
+      0,   0,   0,   0,   0,  15,   4,   0,   0,  -2,   0,   0,   0,   0,   0,   0,
+      0,   0,   0,   0,   0,   0,   0,   6,   0,   0,   1,   0,  -1,  -2,   0,  -2,
+      6,   0,   0,   0,   0,   0,   4,   0,   0,  -1,   0,   1,   0,   0,   0,   0,
+      0,   0,   0,   0,   0,   2,   0,  -2,   2,   0,   0,   3,   0,   0,   1,   4,
+      0,   0,   7,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   9,
+      0,   0,   6,   3,   0,   0,   0,   0,   5,   0,   0,  -2,   0,   0,   0,   6,
+      0,   0,   0,   0,   0,   0,   0,   0,   6,   0,   1,   0,   0,   2,   0,   2,
+      0,   0,  10,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   2,
+      0,   2,   0,   2,   2,   0,   0,   0,   2,   0,  -2,   0,   0,   2,   0,   0,
+      0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   3,   2,   0,   0,   0,   0,
+      0,   0,   0,   0,   6,   2,   0,   0,   0,   0,   0,   0,  -1,   0,   0,   0,
+      0,   4,   0,   4,   0,   3,   0,   0,   0,   0,  14,   0,   0,   0,   6,   0,
+      0,   4,   0,   3,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   2,
+      0,   0,   4,   0,   0,   0,   0,   0,   0,   4,   0,   0,   0,   0,   0,   1,
+};
+
+static const rs_pkt_bind_row k_s2c[] = {
+    {RS_S2C_RESET_ANIMS, 1},
+    {RS_S2C_CAMERA_MOVE, 166},
+    {RS_S2C_VARP_SMALL, 36},
+    {RS_S2C_INVENTORY, 53},
+    {RS_S2C_MULTIZONE, 61},
+    {RS_S2C_NPC_UPDATE, 65},
+    {RS_S2C_SIDEBAR, 71},
+    {RS_S2C_REGION, 73},
+    {RS_S2C_SONG, 74},
+    {RS_S2C_PLAYER_UPDATE, 81},
+    {RS_S2C_VARP_LARGE, 87},
+    {RS_S2C_IF_OPEN, 97},
+    {RS_S2C_MINIMAP, 99},
+    {RS_S2C_PLAYER_OPTION, 104},
+    {RS_S2C_TAB, 106},
+    {RS_S2C_CAMERA_RESET, 107},
+    {RS_S2C_LOGOUT, 109},
+    {RS_S2C_ENERGY, 110},
+    {RS_S2C_SYSTEM_UPDATE, 114},
+    {RS_S2C_PROJECTILE, 117},
+    {RS_S2C_IF_TEXT, 126},
+    {RS_S2C_SKILL, 134},
+    {RS_S2C_SOUND, 174},
+    {RS_S2C_PRIVATE_MESSAGE, 196},
+    {RS_S2C_CHAT_SETTINGS, 206},
+    {RS_S2C_WALKABLE_INTERFACE, 208},
+    {RS_S2C_IGNORE_LIST, 214},
+    {RS_S2C_IF_CLOSE, 219},
+    {RS_S2C_FRIEND_STATUS, 221},
+    {RS_S2C_INVENTORY_UPDATE, 34},
+    {RS_S2C_WEIGHT, 240},
+    {RS_S2C_REGION_INSTANCED, 241},
+    {RS_S2C_PLAYER_INDEX, 249},
+    {RS_S2C_MESSAGE, 253},
+    {RS_S2C_HINT, 254},
+    {RS_S2C_FRIEND_LIST, 50},
+};
+
+void rs_packets_server_254(void) {
+    rs_pkt_table_load(254, k_s2c, RS_NELEM(k_s2c), RS_DIR_S2C);
+}
