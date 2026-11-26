@@ -1,0 +1,67 @@
+#include "both/packets_impl.h"
+
+/* Sizes from the client packet constructors. Missing opcodes are -3. */
+const int8_t rs_sizes_s2c_910[256] = {
+       5,   -1,   -1,    1,   23,    6,   -2,   -2,   -1,   -2,   -1,   19,    0,   18,   -1,   -2,
+      -2,    3,   -1,    1,    6,   -2,   -1,   -2,    2,    0,   32,    1,   21,    2,   -1,    8,
+       2,    6,   -1,   19,   -1,    8,   23,    3,   -2,   -1,   10,    4,    3,    2,   -2,    1,
+       8,    3,    6,   -2,   -1,   28,    3,    3,    3,   -1,   -2,   -2,   -2,   25,   10,    9,
+       4,    3,   -1,   -2,    1,    6,    6,   21,    8,    7,    1,   -2,    1,   -2,   14,    6,
+      -1,    1,   -1,    0,   10,    5,    1,    0,   -2,   -1,   -2,    0,    2,   -1,    2,    2,
+       3,    2,    6,    0,   10,   -2,   25,    8,    0,   -2,    0,    8,    9,    5,    4,   -2,
+      10,   -1,    0,    2,    8,   -1,    7,   -2,   -1,   29,   -2,    6,    5,    9,    4,   11,
+       6,    0,   10,    1,   -2,    0,    1,    8,   -2,    1,    2,   -1,    6,    1,    6,    6,
+       5,   -1,   -2,    7,    0,    3,    2,    4,   -2,    0,   -1,   12,   -2,    3,   10,   -2,
+       2,    1,    4,    1,    4,    5,    4,   -2,    1,    2,   -2,    6,   -1,    3,   -2,    3,
+      -1,    2,   12,   10,    5,   -2,    8,    8,    5,    6,   -2,   -2,    4,    8,    0,    8,
+       3,   10,    4,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,
+      -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,
+      -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,
+      -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,   -3,
+};
+
+static const rs_pkt_bind_row k_s2c[] = {
+    {RS_S2C_CAM_LOOKAT, 5},
+    {RS_S2C_INVENTORY, 6},
+    {RS_S2C_REGION_INSTANCED, 9},
+    {RS_S2C_RESET_ANIMS, 12},
+    {RS_S2C_PROJECTILE, 13},
+    {RS_S2C_PLAYER_OPTION, 14},
+    {RS_S2C_INVENTORY_UPDATE, 16},
+    {RS_S2C_SONG, 17},
+    {RS_S2C_FRIEND_LOADED, 25},
+    {RS_S2C_SKILL, 33},
+    {RS_S2C_IF_OPENTOP, 35},
+    {RS_S2C_IF_OPENSUB, 38},
+    {RS_S2C_VARBIT_SMALL, 44},
+    {RS_S2C_FRIEND_LIST, 46},
+    {RS_S2C_VARP_LARGE, 50},
+    {RS_S2C_ZONE_PARTIAL, 56},
+    {RS_S2C_IF_SETPOS, 72},
+    {RS_S2C_NO_TIMEOUT, 83},
+    {RS_S2C_REGION, 88},
+    {RS_S2C_PRIVATE_MESSAGE, 90},
+    {RS_S2C_IF_SETANIM, 103},
+    {RS_S2C_CAMERA_RESET, 104},
+    {RS_S2C_IF_SETHIDE, 109},
+    {RS_S2C_IF_SETANGLE, 112},
+    {RS_S2C_MESSAGE, 120},
+    {RS_S2C_PLAYER_UPDATE, 122},
+    {RS_S2C_IF_SETCOLOUR, 140},
+    {RS_S2C_VARBIT_LARGE, 142},
+    {RS_S2C_SCRIPT, 156},
+    {RS_S2C_VARP_SMALL, 157},
+    {RS_S2C_IF_SETOBJECT, 158},
+    {RS_S2C_ENERGY, 161},
+    {RS_S2C_IF_CLOSESUB, 166},
+    {RS_S2C_LOGOUT, 168},
+    {RS_S2C_WEIGHT, 169},
+    {RS_S2C_CAM_SHAKE, 171},
+    {RS_S2C_SYSTEM_UPDATE, 177},
+    {RS_S2C_IF_TEXT, 181},
+    {RS_S2C_NPC_UPDATE, 186},
+};
+
+void rs_packets_server_910(void) {
+    rs_pkt_table_load(910, k_s2c, RS_NELEM(k_s2c), RS_DIR_S2C);
+}
