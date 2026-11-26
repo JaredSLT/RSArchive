@@ -1,0 +1,205 @@
+[
+  {
+    "family": "rs2",
+    "rev": 254,
+    "folder": "builds/rs2/254-2004-09-07",
+    "compiled": true,
+    "cache": true
+  },
+  {
+    "family": "rs2",
+    "rev": 282,
+    "folder": "builds/rs2/282-2004-12-21",
+    "compiled": true,
+    "cache": false
+  },
+  {
+    "family": "rs2",
+    "rev": 317,
+    "folder": "builds/rs2/317-2005-06-13",
+    "compiled": true,
+    "cache": true
+  },
+  {
+    "family": "rs2",
+    "rev": 350,
+    "folder": "builds/rs2/350-2005-12-30",
+    "compiled": true,
+    "cache": true
+  },
+  {
+    "family": "rs2",
+    "rev": 377,
+    "folder": "builds/rs2/377-2006-05-02",
+    "compiled": true,
+    "cache": true
+  },
+  {
+    "family": "rs2",
+    "rev": 443,
+    "folder": "builds/rs2/443-2006-12-11",
+    "compiled": true,
+    "cache": true
+  },
+  {
+    "family": "rs2",
+    "rev": 468,
+    "folder": "builds/rs2/468-2007-08-08",
+    "compiled": true,
+    "cache": true
+  },
+  {
+    "family": "rs2",
+    "rev": 474,
+    "folder": "builds/rs2/474-2007-10-19",
+    "compiled": true,
+    "cache": true
+  },
+  {
+    "family": "rs2",
+    "rev": 481,
+    "folder": "builds/rs2/481-2007-12-11",
+    "compiled": true,
+    "cache": true
+  },
+  {
+    "family": "rs2",
+    "rev": 508,
+    "folder": "builds/rs2/508-2008-08-05",
+    "compiled": true,
+    "cache": true
+  },
+  {
+    "family": "rs2",
+    "rev": 525,
+    "folder": "builds/rs2/525-2008-12-15",
+    "compiled": true,
+    "cache": true
+  },
+  {
+    "family": "rs2",
+    "rev": 530,
+    "folder": "builds/rs2/530-2009-01-28",
+    "compiled": true,
+    "cache": true
+  },
+  {
+    "family": "rs2",
+    "rev": 578,
+    "folder": "builds/rs2/578-2009-12-16",
+    "compiled": true,
+    "cache": true
+  },
+  {
+    "family": "rs2",
+    "rev": 614,
+    "folder": "builds/rs2/614-2010-07-13",
+    "compiled": true,
+    "cache": true
+  },
+  {
+    "family": "rs2",
+    "rev": 634,
+    "folder": "builds/rs2/634-2010-12-10",
+    "compiled": true,
+    "cache": true
+  },
+  {
+    "family": "rs2",
+    "rev": 667,
+    "folder": "builds/rs2/667-2011-09-29",
+    "compiled": true,
+    "cache": true
+  },
+  {
+    "family": "rs2",
+    "rev": 695,
+    "folder": "builds/rs2/695-2011-12-22",
+    "compiled": true,
+    "cache": false
+  },
+  {
+    "family": "rs2",
+    "rev": 742,
+    "folder": "builds/rs2/742-2012-11-07",
+    "compiled": true,
+    "cache": true
+  },
+  {
+    "family": "rs2",
+    "rev": 745,
+    "folder": "builds/rs2/745-2012-12-07",
+    "compiled": true,
+    "cache": false
+  },
+  {
+    "family": "rs3",
+    "rev": 790,
+    "folder": "builds/rs3/790-2013-12-16",
+    "compiled": true,
+    "cache": false
+  },
+  {
+    "family": "rs3",
+    "rev": 831,
+    "folder": "builds/rs3/831-2014-12-04",
+    "compiled": true,
+    "cache": false
+  },
+  {
+    "family": "rs3",
+    "rev": 860,
+    "folder": "builds/rs3/860-2015-12-01",
+    "compiled": true,
+    "cache": false
+  },
+  {
+    "family": "rs3",
+    "rev": 876,
+    "folder": "builds/rs3/876-2016-11-28",
+    "compiled": true,
+    "cache": false
+  },
+  {
+    "family": "rs3",
+    "rev": 887,
+    "folder": "builds/rs3/887-2017-11-01",
+    "compiled": true,
+    "cache": false
+  },
+  {
+    "family": "rs3",
+    "rev": 902,
+    "folder": "builds/rs3/902-2018-12-14",
+    "compiled": true,
+    "cache": false
+  },
+  {
+    "family": "rs3",
+    "rev": 910,
+    "folder": "builds/rs3/910-2019-10-16",
+    "compiled": true,
+    "cache": false
+  },
+  {
+    "family": "rsc",
+    "rev": 115,
+    "folder": "builds/rsc/115-2001-12-24",
+    "compiled": true,
+    "cache": true
+  },
+  {
+    "family": "rsc",
+    "rev": 159,
+    "folder": "builds/rsc/159-2002-11-25",
+    "compiled": true,
+    "cache": true
+  },
+  {
+    "family": "rsc",
+    "rev": 177,
+    "folder": "builds/rsc/177-2003-10-31",
+    "compiled": true,
+    "cache": true
+  }
+]
