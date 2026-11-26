@@ -1,0 +1,30 @@
+# Downloaded and decompiled clients stay on the machine that runs the scripts.
+# This repository is the project, not the archive.
+builds/**
+!builds/osrs/
+builds/osrs/**
+!builds/osrs/README.md
+!builds/rs3/
+builds/rs3/**
+!builds/rs3/README.md
+
+work/
+logs/
+saves/
+references/
+
+# Regenerated build output
+**/build/
+**/.gradle/
+rslib/build/
+scripts/__pycache__/
+**/runtime-home/
+
+# Third-party binaries and jav_config secrets
+**/*.jar
+**/*.class
+**/*.zip
+**/parameters.txt
+**/*.sav
+
+.DS_Store
