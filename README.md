@@ -2,7 +2,9 @@
 
 Scripts that download, deobfuscate, and decompile yearly RuneScape client snapshots, and RSLib (`rslib/`), the C library for those clients.
 
-This repository is the project only. A clone does not contain gamepacks, caches, decompiled or deobfuscated clients, `original/parameters.txt`, saves, logs, or `work/`. The scripts write those under `builds/` and `work/` on the machine that runs them, and `.gitignore` keeps them out of git. The sources the scripts produce are patched trees, not a clean decompile.
+This repository is the project only. A clone does not contain gamepacks, caches, decompiled or deobfuscated clients, `original/parameters.txt`, saves, logs, `work/`, or the reference checkouts. The scripts write archives under `builds/` and `work/` on the machine that runs them, and `.gitignore` keeps them out of git. The sources the scripts produce are patched trees, not a clean decompile.
+
+Community servers and engines are listed in [references/SOURCES.md](references/SOURCES.md). Only the links are committed. Client specs are in [wiki/index.md](wiki/index.md).
 
 ## What this is not
 
@@ -136,6 +138,14 @@ cd ..
 `run.sh` launches the `application.mainClass` from that client's `build.gradle`, and that source file is in the tree. RSC is `deob.MudClient`. 254, 317, and 377 are `jagex2.client.Client`. 282, 350, 443, 481, 525, 578, 614, 634, 667, and 695 are `deob.Client`. 468, 474, 508, and 530 are `rt4.Client`. 745 and the RS3 clients that have `AppletViewer.java` launch `AppletViewer`. 831 and 860 launch the default-package `client`. 742 launches `AppletViewer`.
 
 317 and 377 print `RS2 user client - release #N` and load the cache immediately. 474 and later need an external JS5 emulator. Without one they start and then show `error_game_js5connect` (`error_game_` plus `js5connect`), which is expected. Point them at a matching emulator (2009scape for 530, 2011Scape for 667, and so on). After the first launch, search the decompiled sources for `jagex`, `runescape.com`, and `modulus` if login still fails. Do not publish what you find there.
+
+## GitHub
+
+This repository contains the scripts, RSLib, the tool wrappers, the client specs under `wiki/`, the reference links in `references/SOURCES.md`, and the `builds/osrs` and `builds/rs3` READMEs. It does not contain gamepacks, caches, decompiled clients, `parameters.txt`, jars, saves, logs, `work/`, or the reference checkouts.
+
+## References
+
+Community servers and engines are linked from `references/SOURCES.md`. The cloned trees stay in `references/` and are not committed.
 
 ## Legal
 
